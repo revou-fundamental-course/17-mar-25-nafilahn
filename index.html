@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\style.css">
+	<title>Katik - Kalkulator Matematika</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Katik</h1>
+			<h2>Kalkulator Matematika</h2>
+		</header>
+	
+		<section class="intro">
+			<h3>Welcome to Katik</h3>
+			<p>Halo, Selamat datang di Katik</p>
+		</section>
+		<button class="btn">Persegi</button><br>
+		<button class="btn">Persegi Panjang</button>
+		
+		<section class="calculator-section">
+			<h3>Luas Persegi</h3>
+			<div class="image-container">
+				<img src="assets/persegi.jpg" alt="Luas Persegi">
+				<p>Bujur Sangkar</p>
+			</div>
+			<p>Rumus Luas Persegi yaitu:</p>
+			<b style="display: flex; justify-content: space-evenly">L = S x S</b>
+			<div class="formula">
+				<p>Di mana:</p>
+				<p>L = Luas</p>
+				<p>S = Sisi</p>
+			</div>
+			<div class="calc-section">
+				<label for="sisi"><h2>Hitung Luas Persegi</h2></label>
+				<input type="number" id="sisi" placeholder="Nilai Sisi">
+				<p id="hasil"></p>
+				<button onclick="calculateArea()" class="calculate">Hitung</button><br>
+				<button onclick="reset()" class="reset">Reset</button>
+			</div>
+		</section>
+	</div>
+	<script src="js\script.js"></script>
+</body>
+</html>
