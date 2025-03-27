@@ -29,40 +29,41 @@
 			<button onclick="luas_pp()" class="btn">Luas Persegi Panjang</button><br>
 			<button onclick="keliling_pp()" class="btn">Keliling Persegi Panjang</button>	
 		</div>
-
-		<!-- Bagian untuk menghitung luas persegi-->
-		<div class="container-luas">
-			<section class="calculator-section">
-				<h3 style="display: flex; justify-content: center;">Luas Persegi</h3>
-				<div class="image-container">
-					<!-- Bagian untuk menampilkan gambar-->
-					<img src="assets/persegi.jpg" alt="Luas Persegi">
-					<p>Bujur Sangkar</p>
-				</div>
-				<!-- Bagian untuk menampilkan rumus luas persegi -->
-				<p>Rumus Luas Persegi yaitu:</p>
-				<b style="display: flex; justify-content: space-evenly">L = S x S</b>
-				<div class="formula">
-					<p>Di mana:</p>
-					<p>L = Luas</p>
-					<p>S = Sisi</p>
-				</div>
-				<div class="calc-section">
-					<label for="sisi">
-						<h2>Hitung Luas Persegi</h2>
-					</label>
-					<!-- Bagian untuk menginput nilai sisi -->
-					<input type="number" id="sisi" placeholder="Nilai Sisi">
-					<!-- Bagian untuk menampilkan hasil luas persegi -->
-					<p id="hasil"></p>
-					<!-- Tombol untuk menghitung luas persegi -->
-					<button onclick="hitung_luas()" class="calculate">Hitung</button><br>
-					<!-- Tombol untuk mereset hasil luas persegi -->
-					<button onclick="reset_luas()" class="reset">Reset</button>
-				</div>
-			</section>
-		</div>
-		<!-- JavaScript eksternal-->
+		
+		<!-- Bagian untuk menghitung keliling persegi panjang-->
+		<section class="calculator-section">
+			<h3 style="display: flex; justify-content: center;">Keliling Persegi Panjang</h3>
+			<div class="image-container">
+				<!-- Bagian untuk menampilkan gambar-->
+				<img src="assets/persegi-panjang.png" alt="Keliling Persegi Panjang">
+				<p>Persegi Panjang</p>
+			</div>
+			<!-- Bagian untuk menampilkan rumus keliling persegi panjang-->
+			<p>Rumus Keliling Persegi Panjang yaitu:</p>
+			<b style="display: flex; justify-content: space-evenly">K = 2P + 2L</b>
+			<div class="formula">
+				<p>Di mana:</p>
+				<p>K = Keliling</p>
+				<p>P = Panjang</p>
+				<p>L = Lebar</p>
+			</div>
+			<div class="calc-section">
+				<label for="sisi">
+					<h2>Hitung Keliling Persegi Panjang</h2>
+				</label>
+				<!-- Bagian untuk menginput nilai panjang dan lebar-->
+				<input type="number" id="panjang" placeholder="Nilai Panjang">
+				<input type="number" id="lebar" placeholder="Nilai Lebar">
+				<!-- Bagian untuk menampilkan hasil keliling persegi panjang-->
+				<p id="hasil"></p>
+				<!-- Tombol untuk menghitung keliling persegi panjang -->
+				<button onclick="hitung_keliling_pp()" class="calculate">Hitung</button><br>
+				<!-- Tombol untuk mereset hasil keliling persegi panjang -->
+				<button onclick="reset_keliling_pp()" class="reset">Reset</button>
+			</div>
+		</section>
+	</div>
+	<!-- JavaScript eksternal-->
 	<script src="js\script.js"></script>
 </main>
 </body>

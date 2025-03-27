@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css\style.css">
+	<link rel="stylesheet" href="css\style.css"> <!-- Link untuk menghubungkan ke file css -->
 	<title>Katik - Kalkulator Matematika</title>
 </head>
 <body>
+<main>
+	<!-- Bagian header tampilan -->
 	<div class="container">
 		<header>
 			<h1>Katik</h1>
@@ -17,15 +19,26 @@
 			<h3>Welcome to Katik</h3>
 			<p>Halo, Selamat datang di Katik</p>
 		</section>
-		<button onclick="halamanLuas()" class="btn">Luas Persegi</button><br>
-		<button onclick="halamanKeliling()" class="btn">Keliling Persegi</button>
+
+		<!-- Tombol untuk navigasi ke halaman luas dan keliling-->
+		<div class="button-container">
+			<button onclick="luas_persegi()" class="btn">Luas Persegi</button><br>
+			<button onclick="keliling_persegi()" class="btn">Keliling Persegi</button>	
+		</div>
+		<div class="button-container">
+			<button onclick="luas_pp()" class="btn">Luas Persegi Panjang</button><br>
+			<button onclick="keliling_pp()" class="btn">Keliling Persegi Panjang</button>	
+		</div>
 		
+		<!-- Bagian untuk menghitung keliling persegi -->
 		<section class="calculator-section">
 			<h3 style="display: flex; justify-content: center;">Keliling Persegi</h3>
 			<div class="image-container">
+				<!-- Bagian untuk menampilkan gambar-->
 				<img src="assets/persegi.jpg" alt="Keliling Persegi">
 				<p>Bujur Sangkar</p>
 			</div>
+			<!-- Bagian untuk menampilkan rumus keliling persegi -->
 			<p>Rumus Keliling Persegi yaitu:</p>
 			<b style="display: flex; justify-content: space-evenly">K = 4 x S</b>
 			<div class="formula">
@@ -34,14 +47,52 @@
 				<p>S = Sisi</p>
 			</div>
 			<div class="calc-section">
-				<label for="sisi"><h2>Hitung Keliling Persegi</h2></label>
+				<label for="sisi">
+					<h2>Hitung Keliling Persegi</h2>
+				</label>
+				<!-- Bagian untuk menginput nilai sisi -->
 				<input type="number" id="sisi" placeholder="Nilai Sisi">
+				<!-- Bagian untuk menampilkan hasil keliling persegi -->
 				<p id="hasil"></p>
-				<button onclick="hitungKeliling()" class="calculate">Hitung</button><br>
-				<button onclick="resetKeliling()" class="reset">Reset</button>
+				<!-- Tombol untuk menghitung keliling persegi -->
+				<button onclick="hitung_keliling()" class="calculate">Hitung</button><br>
+				<!-- Tombol untuk mereset hasil keliling persegi -->
+				<button onclick="reset_keliling()" class="reset">Reset</button>
 			</div>
 		</section>
 	</div>
+	<!-- JavaScript eksternal-->
 	<script src="js\script.js"></script>
+</main>
 </body>
+<footer>
+    <!-- Kontainer utama untuk footer -->
+    <div class="footer-container">
+        <!-- Bagian tentang kami -->
+        <div class="footer-section about">
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah kalkulator sederhana yang kami buat.</p>
+        </div>
+        <!-- Bagian link cepat -->
+        <div class="footer-section links">
+            <h2>Link Cepat</h2>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+        <!-- Bagian kontak -->
+        <div class="footer-section contact">
+            <h2>Hubungi Kami</h2>
+            <p>Email: nafilahnursabila443@gmail.com</p>
+            <p>Telepon: (021) 123-4567</p>
+        </div>
+    </div>
+    <!-- Bagian bawah footer -->
+    <div class="footer-bottom">
+        <p>&copy; 2025</p>
+    </div>
+</footer>
 </html>
